@@ -1,0 +1,31 @@
+Feature: Medical Application view your health record
+
+Scenario: User Credentials for view your health record
+Given user navigates to the home page https://mycw51.eclinicalweb.com/portal5892/jsp/100mp/login_otp.jsp"
+Then user verifies if "View your health record" tab exist
+Then user clicks on "View your health record" tab
+Then "Login to view your health record" credential block shoud appear
+Then user verifies if "User Credentials" and "Using Mobile Phone" click to choose box exist
+And click on "User Credentials" box or verifies "User Credentials" is selected
+Then user verifies if "username" box exist.
+Then user verifies if "password" box exist.
+Then enter validated "username"
+Then enter validated "password"
+When username and password is enter click on "Login"
+
+
+
+Scenario: Using Mobile Phone for view your health record
+Given user navigates to the home page https://mycw51.eclinicalweb.com/portal5892/jsp/100mp/login_otp.jsp"
+Then user verifies if "View your health record" tab exist
+Then user clicks on "View your health record" tab
+Then "Login to view your health record" credential block shoud appear
+Then user verifies if "User Credentials" and "Using Mobile Phone" click to choose box exist
+And click on "Using Mobile Phone" box or verifies "Using Mobile Phone" is selected
+Then user verify "First Name" box exist
+Then user verify "Last Name" box exist
+Then user verify "mm/dd/yyyy" box exist
+Then user enter validated "First Name"
+Then user enter validated "Last Name"
+Then user enter validated "date of birth"/"mm/dd/yyyy"
+When "First Name", "Last Name" and "date of birth" is entered click submit
