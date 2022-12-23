@@ -1,0 +1,39 @@
+Feature:Medical Application view your health record
+
+
+Scenario:User Credentials for view your health record
+
+Given I am on the home page of Beauregard Medical Center (https://www.beauregardmedicalctr.com/)
+Verify patients tab is there
+Click on "patients" tab 
+Verify it brings fall out options Patient portal/patient forms
+Click on "Patient portal" and make sure it reditects you to the appropriate page
+Verify you are not on"Welcome to Beauregard Medical Center" page
+Verify you see "View your health record" tab is displayed on the page
+Then click on "View your health record" tab 
+Verify Login to view your health record fields appeared
+Verify "User Credentials" option is available for selection and is clickable
+Select "User Credentials" option
+Enter valid user credentials (User Name, Password)
+Make sure "Login" button is there and is clickable
+Press the login button
+
+
+Scenario:Using Mobile Phone for view your health 
+
+Given I am on the home page of Beauregard Medical Center (https://www.beauregardmedicalctr.com/)
+Verify patients tab is there
+Click on "patients" tab 
+Verify it brings fall out options Patient portal/patient forms
+Click on "Patient portal" and make sure it reditects you to the appropriate page
+Verify you are not on"Welcome to Beauregard Medical Center" page
+Verify you see "View your health record" tab is displayed on the page
+Then click on "View your health record" tab 
+Verify Login to view your health record fields appeared
+Verify "Using Mobile Phone" option is available for selection and is clickable
+Select "Using Mobile Phone" option
+Enter valid user credentials (First Name, Last Name, mm/dd/yyyy)
+Make sure "Submit" button is there and is clickable
+Press the login button
+Verify the message appears at the bottom "Match not found in our system."
+
